@@ -1,10 +1,10 @@
 import React from 'react'
-import Navigationbar from './components/navigation/navigationbar'
+import NavigationBar from './components/navigation/NavigationBar'
 
 const App = () => {
   return (
     <>
-      <Navigationbar />
+      <NavigationBar />
     </>
   )
 }

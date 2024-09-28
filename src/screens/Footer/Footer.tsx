@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const Costomnavigationbar = () => {
+const Footer = () => {
     return (
         <View>
-            <Text>costomnavigationbar</Text>
+            <Text>Footer</Text>
         </View>
     )
 }
 
-export default Costomnavigationbar
+export default Footer
