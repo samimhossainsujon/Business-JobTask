@@ -2,13 +2,13 @@ import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'react-native';
-import { COLORS } from '../assets/constants'; 
-import CustomDrawerMenu from './CustomDrawerMenu'; 
-import Home from '../../screens/Home/Home'; 
-import Question from '../../screens/Question/Question'; 
-import Experience from '../../screens/Experience/Experience'; 
+import { COLORS } from '../assets/constants';
+import CustomDrawerMenu from './CustomDrawerMenu';
+import Home from '../../screens/Home/Home';
+import Question from '../../screens/Question/Question';
+import Experience from '../../screens/Experience/Experience';
 import { DrawerActions } from '@react-navigation/native';
-import { IconButton } from 'react-native-paper'; 
+import { IconButton } from 'react-native-paper';
 
 const Drawer = createDrawerNavigator();
 
@@ -25,7 +25,7 @@ function DrawerGroup() {
                     />
                 ),
                 headerStyle: {
-                    backgroundColor: COLORS.background,
+                    backgroundColor: COLORS.white,
                 },
                 headerTitleAlign: 'center',
                 drawerStyle: {
@@ -33,7 +33,7 @@ function DrawerGroup() {
                 },
             })}
         >
-            <Drawer.Screen name="Home" component={Home} />
+            <Drawer.Screen name="Business & First Class ​Reviews" component={Home} />
             {/* Government Section */}
             <Drawer.Screen name="All Government Job" component={Question} />
             <Drawer.Screen name="All Government Job Details" component={Experience} />
@@ -44,7 +44,7 @@ function DrawerGroup() {
 export default function NavigationBar() {
     return (
         <NavigationContainer>
-            <StatusBar backgroundColor={COLORS.background} barStyle="light-content" />
+            <StatusBar backgroundColor={COLORS.white} barStyle="light-content" />
             <DrawerGroup />
         </NavigationContainer>
     );
