@@ -13,6 +13,7 @@ export const COLORS = {
   white: '#FFFFFF',
   NokiaBlue: '#005aff',
   BGFooter: '#3b3b3b',
+  IMGBG: '#F8F8FF',
 };
 
 export const SIZES = {
