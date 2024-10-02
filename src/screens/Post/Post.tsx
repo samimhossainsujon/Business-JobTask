@@ -34,10 +34,10 @@ const Post: React.FC = () => {
                                         />
                                     </View>
                                     <View>
-                                        <Text style={{ fontSize: 20, fontWeight: 'bold' }}>
+                                        <Text style={{ fontSize: 20, fontWeight: 'bold', color: COLORS.black }}>
                                             {post.name}
                                         </Text>
-                                        <Text style={{ fontSize: 16, fontWeight: '400' }}>
+                                        <Text style={{ fontSize: 16, fontWeight: '400', color: COLORS.black }}>
                                             1 day ago
                                         </Text>
                                     </View>
@@ -51,7 +51,7 @@ const Post: React.FC = () => {
                             </View>
 
 
-                            <Text style={{ fontWeight: 'bold', fontSize: 18, padding: 5 }}>
+                            <Text style={{ fontWeight: 'bold', fontSize: 18, padding: 5, color: COLORS.black }}>
                                 {post.Tags.map(tag => `#${tag}`).join(' ')}
                             </Text>
 
@@ -60,16 +60,15 @@ const Post: React.FC = () => {
 
 
                             <Text
-                                style={{ marginTop: 10, marginBottom: 10 }}
-                            >{post.description}</Text>
+                                style={{ marginTop: 10, marginBottom: 10, color: COLORS.black }}>{post.description}</Text>
                             <Image
                                 source={{ uri: post.image }}
                                 style={{ width: 380, height: 300 }}
                             />
                             <View style={{ flexDirection: 'row', gap: 15 }}>
-                                <Text style={{ fontSize: 20 }}>{post.like} Likes</Text>
-                                <Text style={{ fontSize: 20 }}>.</Text>
-                                <Text style={{ fontSize: 20 }}>{post.comment} Comments</Text>
+                                <Text style={{ fontSize: 20, color: COLORS.black }}>{post.like} Likes</Text>
+                                <Text style={{ fontSize: 20, color: COLORS.black }}>.</Text>
+                                <Text style={{ fontSize: 20, color: COLORS.black }}>{post.comment} Comments</Text>
                             </View>
 
                             <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginLeft: 25, marginRight: 25, marginTop: 10, marginBottom: 10 }}>
@@ -97,10 +96,10 @@ const Post: React.FC = () => {
                                             />
                                         </View>
                                         <View>
-                                            <Text style={{ fontSize: 20, fontWeight: 'bold' }}>
+                                            <Text style={{ fontSize: 20, fontWeight: 'bold', color: COLORS.black }}>
                                                 {post.commentName}
                                             </Text>
-                                            <Text style={{ fontSize: 16, fontWeight: '400' }}>
+                                            <Text style={{ fontSize: 16, fontWeight: '400', color: COLORS.black }}>
                                                 3 min ago
                                             </Text>
                                         </View>
@@ -114,7 +113,7 @@ const Post: React.FC = () => {
                                     </View>
 
                                 </View>
-                                <Text style={{ marginTop: 10 }}>{post.commentDescription}</Text>
+                                <Text style={{ marginTop: 10, color: COLORS.black }}>{post.commentDescription}</Text>
 
 
                                 <View style={{ flexDirection: 'row', gap: 50, marginTop: 15, alignItems: 'center' }}>

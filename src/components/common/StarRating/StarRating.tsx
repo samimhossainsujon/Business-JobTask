@@ -20,7 +20,7 @@ const StarRating: React.FC<PostProps> = ({ rating }) => {
                     style={{ marginRight: 5 }}
                 />
             ))}
-            <Text style={{ fontSize: 24, marginLeft: 10 }}>{rating}</Text>
+            <Text style={{ fontSize: 24, marginLeft: 10, color:COLORS.black }}>{rating}</Text>
         </View>
     );
 };
