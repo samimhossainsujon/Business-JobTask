@@ -51,6 +51,14 @@ const Post: React.FC = () => {
                             </View>
 
 
+                            <Text style={{ fontWeight: 'bold', fontSize: 18, padding: 5 }}>
+                                {post.Tags.map(tag => `#${tag}`).join(' ')}
+                            </Text>
+
+
+
+
+
                             <Text
                                 style={{ marginTop: 10, marginBottom: 10 }}
                             >{post.description}</Text>
