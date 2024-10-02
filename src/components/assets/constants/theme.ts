@@ -9,11 +9,14 @@ export const COLORS = {
   success2: '#389F54',
   success: '#00C851',
   error: '#ff4444',
-  black: '#000000',
+  black: '#2a2828',
   white: '#FFFFFF',
   NokiaBlue: '#005aff',
   BGFooter: '#3b3b3b',
-  IMGBG: '#F8F8FF',
+  IMGBG: '#d5d5e9',
+  Raging: '#ffec00',
+  CommentBG: '#c9cfdd',
+  Adswhite: '#c0cce9',
 };
 
 export const SIZES = {

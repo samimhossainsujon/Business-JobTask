@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, View, TouchableOpacity, Modal, Button, TextInput, Image, ToastAndroid } from 'react-native';
+import { Text, View, TouchableOpacity, Modal, Button, TextInput, Image, ToastAndroid, ScrollView } from 'react-native';
 import Footer from '../Footer/Footer';
 import ADS from '../ADS/ADS';
 import Post from '../Post/Post';
@@ -63,7 +63,7 @@ const Home = () => {
     };
 
     const handleImagePick = () => {
-        console.log('Image picked'); 
+        console.log('Image picked');
     };
 
     const handleSubmit = () => {
@@ -72,7 +72,7 @@ const Home = () => {
     };
 
     return (
-        <>
+        <ScrollView>
             <View style={{ padding: 10 }}>
                 <View style={{ flexDirection: 'row', justifyContent: 'center', gap: 20, marginLeft: 20, marginRight: 20, padding: 10 }}>
                     <CustomButton
@@ -89,7 +89,6 @@ const Home = () => {
                 <Search />
                 <Carousel />
                 <Post />
-                <ADS />
             </View>
 
             {/* Modal Component */}
@@ -149,6 +148,7 @@ const Home = () => {
                                 </View>
 
                                 <TouchableOpacity
+                                    //@ts-ignore
                                     style={styles.imagePicker}>
                                     <MaterialIcons
                                         name="upload-file"
@@ -231,6 +231,7 @@ const Home = () => {
                                 </View>
 
                                 <TouchableOpacity
+                                    //@ts-ignore
                                     style={styles.imagePicker}>
                                     <MaterialIcons
                                         name="upload-file"
@@ -260,7 +261,7 @@ const Home = () => {
             </Modal>
 
             <Footer />
-        </>
+        </ScrollView>
     );
 };
 
